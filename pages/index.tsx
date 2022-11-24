@@ -1,10 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import { Paper, Group, Text, TextInput, Button } from "@mantine/core";
 import { NextPage } from "next";
-import Head from "next/head";
-import Image from "next/image";
 import { useState } from "react";
-import styles from "../styles/Home.module.css";
 
 const API_KEY = "a7d14561cfc9ee3023ce6f28abb24133";
 
@@ -105,7 +102,7 @@ const Home: NextPage = () => {
 										width="100px"
 										height="100px"
 									/>
-									<Text size="xl" weight={600}>{weatherData.main.temp} &deg;C</Text>
+									<Text size="xl" weight={600}>{parseInt(weatherData.main.temp)} &deg;C</Text>
 								</Group>
 								
 							</div>
